@@ -2,7 +2,7 @@ import os
 import platform
 from setuptools import setup, Extension
 
-fwlib_dir = os.path.join(os.getcwd(), "extern/fwlib")
+fwlib_dir = os.path.join(os.path.dirname(__file__), "extern/fwlib")
 libpath = os.path.join(fwlib_dir, "libfwlib32.so")
 if not os.path.isfile(libpath):
     plat = "linux"
